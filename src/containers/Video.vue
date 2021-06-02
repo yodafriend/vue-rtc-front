@@ -42,7 +42,7 @@
                 return new Promise((resolve, reject) => {
                     getUserMedia.call(navigator, {
                         "audio": true,
-                        "video": false
+                        "video": true
                     }, (stream) => {
                         myVideo.srcObject = stream;
                         this.localStream = stream;
